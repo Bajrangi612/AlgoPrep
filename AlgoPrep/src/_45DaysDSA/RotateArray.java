@@ -37,7 +37,6 @@ public class RotateArray {
             from++; to--;
         }
     }
-
      public static void rotateArray1(int []nums, int k) {
          int n = nums.length;
          int[] temp = new int[n];
@@ -45,6 +44,5 @@ public class RotateArray {
              temp[(i + k) % n] = nums[i];
          }
          System.arraycopy(temp, 0, nums, 0, n);
-
      }
 }
